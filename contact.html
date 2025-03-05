@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="icon" href="شركة هول إن ون.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجع الجولف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #88ba94, #28a745);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            margin-left: 20px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        .nav-buttons button {
+            background: white;
+            color: #28a745;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .nav-buttons button:hover {
+            background: #218838;
+            color: white;
+        }
+        .account-section {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .account-form {
+            display: none;
+            margin-top: 10px;
+        }
+        .account-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .account-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .account-button:hover {
+            background: #218838;
+        }
+        footer {
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="شركة هول إن ون.png" class="logo" width="100" height="100">
+        <div class="nav-buttons">
+         <button onclick="document.location='index.html'">الصفحة الرئيسية</button>
+        <button onclick="document.location='activites.html'">المرافق</button>
+        <button onclick="document.location='act.html'">الأنشطة</button>
+        <button onclick="document.location='packages.html'">الحزم</button>
+        <button onclick="document.location='contact.html'">تسجيل الدخول</button>
+        <button onclick="document.location='long.html'">الاستفسار </button>
+    </header>
+
+    <div class="account-section">
+        <h2>إنشاء حساب</h2>
+        <button class="account-button" onclick="toggleAccountForm()">إنشاء حساب جديد</button>
+        <div class="account-form" id="account-form">
+            <input type="text" class="account-input" placeholder="Enter Phone Number or Email" required>
+            <input type="text" class="account-input" placeholder="Username" required>
+            <input type="password" class="account-input" placeholder="Password" required>
+            <button class="account-button" onclick="createAccount()">Submit</button>
+            <button class="account-button" onclick="toggleAccountForm()">Cancel</button>
+        </div>
+        <p>هل لديك حساب؟ <button class="account-button" onclick="login()">تسجيل الدخول</button></p>
+    </div>
+
+    <script>
+        function toggleAccountForm() {
+            var form = document.getElementById("account-form");
+            if (form.style.display === "none" || form.style.display === "") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
+
+        function createAccount() {
+            alert("تم إنشاء الحساب بنجاح!");
+        }
+
+        function login() {
+            alert("تم الانتقال إلى صفحة تسجيل الدخول!");
+        }
+    </script>
+    <footer>
+        <p>منتجع الجولف - جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+    
+    
+</body>
+</html>

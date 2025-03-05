@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="icon" href="شركة هول إن ون.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجع الجولف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #88ba94, #28a745);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            margin-left: 20px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        .nav-buttons button {
+            background: white;
+            color: #28a745;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .nav-buttons button:hover {
+            background: #218838;
+            color: white;
+        }
+        .section-container {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .package {
+            border: 1px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #e9f7ef;
+        }
+        .contact-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .contact-btn:hover {
+            background: #218838;
+        }
+        footer {
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="شركة هول إن ون.png" class="logo" width="100" height="100">
+        <div class="nav-buttons">
+            <button onclick="document.location='index.html'">الصفحة الرئيسية</button>
+            <button onclick="document.location='activites.html'">المرافق</button>
+            <button onclick="document.location='act.html'">الأنشطة</button>
+            <button onclick="document.location='packages.html'">الحزم</button>
+            <button onclick="document.location='contact.html'">تسجيل الدخول</button>
+            <button onclick="document.location='long.html'">الاستفسار </button>
+        </div>
+    </header>
+    
+    <section id="packages" class="section-container">
+        <h2>الحزم المتاحة</h2>
+        <div class="package">
+            <h3>خمس جولات</h3>
+            <p>إقامة خمس ليالٍ في جناح فاخر، خمس جولات - 18 حفرة، جولة في ملعب "سي فيو"، جلسة تدريب رقمية مجانية.</p>
+        </div>
+        <div class="package">
+            <h3>الجولة الثلاثية (Triple Tee)</h3>
+            <p>إقامة ليلتين في غرفة مزدوجة مع وجبة الإفطار، ثلاث جولات - 18 حفرة، تأجير مجاني للعربات، خصم 20% في متجر المحترفين.</p>
+        </div>
+        <div class="package">
+            <h3>استراحة استجمام</h3>
+            <p>إقامة ليلتين في غرفة مزدوجة مع وجبة الإفطار، ثلاث جولات - 18 حفرة، تأجير مجاني للعربات، خصم 20% في متجر المحترفين.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section-container">
+        <h2>اتصل بنا</h2>
+        <p>تتوفر الحزم المخصصة للفعاليات المؤسسية والإقامات الطويلة. يُرجى الاتصال بنا لترتيب أي حزم مخصصة.</p>
+        <button class="contact-btn" onclick="sendEmail()">📧 أرسل لنا بريدًا</button>
+    </section>
+    <footer>
+        <p>منتجع الجولف - جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+    
+    
+</body>
+</html>
